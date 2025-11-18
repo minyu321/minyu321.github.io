@@ -4,9 +4,47 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NTUE114「教學科技應用設計競賽」實施辦法</title>
-    <!--1-->
---><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-<!--2-->
+    <!--2-->
+    --><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+      <style>
+      :root{--blue-50:#eef5ff;--blue-100:#dfeeff;--blue-500:#0d6efd;--blue-700:#0b63d1;--muted:#6c757d}
+      body{font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial, sans-serif;background:var(--blue-50);color:#0b2546}
+      h2.featurette-heading{color:var(--blue-700);margin-top:0.5rem}
+      p.lead{color:#213144;line-height:1.6}
+      a{color:var(--blue-700)}
+      a:hover{text-decoration:underline}
+      .featurette-divider{border-top:1px solid rgba(13,110,253,.12)}
+      .container .col-md-7{margin-bottom:1.2rem}
+      .carousel-item img{max-height:360px;object-fit:cover}
+      footer{color:var(--muted)}
+
+      /* 統一黑色 / 藍色字體大小設計 */
+      :root{--font-size-black:16px;--font-size-blue:16px;--font-size-heading:20px}
+
+      /* 黑色文字（內容段落） */
+      p.lead, .lead, .text-body-secondary, .text-center, .text-dark-unified {
+        color: #0b2546 !important;
+        font-size: var(--font-size-black);
+        font-weight: 400 !important;
+      }
+
+      /* 若有 <strong> 或 <b> 包裹黑色段落，亦強制使用正常字重 */
+      p.lead strong, p.lead b, .text-body-secondary strong, .text-body-secondary b {
+        font-weight: 400 !important;
+      }
+
+      /* 藍色文字（連結、強調文字） - 不包含 navbar brand（維持白色） */
+      a, .text-blue-unified, .featurette-heading span {
+        color: var(--blue-700) !important;
+        font-size: var(--font-size-blue);
+      }
+
+      /* 標題稍大但顏色為藍 */
+      h2.featurette-heading{font-size:var(--font-size-heading);color:var(--blue-700)}
+      </style>
+
+      </head>
 --><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -25,9 +63,10 @@
 <div id="carouselExample" class="carousel slide">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="1.png" class="d-block w-100" alt="...">
+      <img src="1..jpg" class="d-block w-100" alt="...">
     </div>
-     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+  
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
@@ -37,12 +76,14 @@
   </button>
 </div>
 <!--main-->
-<hr class="featurette-divider">
-<div class="col-md-7"> <h2 class="featurette-heading fw-normal lh-1">關於我們 <span class="text-body-secondary">國立臺北教育大學</span></h2> <p class="lead">本活動主旨在鼓勵學生將數位科技應用於教學現場，強化教材設計與創作能力，特舉辦
-本競賽，期望學生能靈活運用 VR、AI 技術及 Apple 教育工具，並結合數位
-媒體、互動設計及多元評量方式，設計具創新性與實用性的教學應用，進而
-增強學生於各領域之數位內容科技創建能力。
-</p> </div>
+<main class="container py-5">
+  <hr class="featurette-divider">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8">
+      <h2 class="featurette-heading fw-normal lh-1">關於我們 <span class="text-body-secondary">國立臺北教育大學</span></h2>
+      <p class="lead">本活動主旨在鼓勵學生將數位科技應用於教學現場，強化教材設計與創作能力，特舉辦本競賽，期望學生能靈活運用 VR、AI 技術及 Apple 教育工具，並結合數位媒體、互動設計及多元評量方式，設計具創新性與實用性的教學應用，進而增強學生於各領域之數位內容科技創建能力。</p>
+    </div>
+  </div>
 
 <hr class="featurette-divider">
 <div class="col-md-7 order-md-2"> <h2 class="featurette-heading fw-normal lh-1">競賽辦法 
@@ -70,11 +111,12 @@
 </p> </div>
 <hr class="featurette-divider">
 
-<div class="col-md-7 order-md-2"> <h2 class="featurette-heading fw-normal lh-1">報名方式及日程
-    <p class="lead">(一)競賽報名：自即日起至 114 年 11 月 7 日(五)截止。
-<p class="lead">競賽報名網址：<p><a href="#" class="https://forms.gle/Hs9SkDYpiAaB2J9p6">點我</a></p><link>" </p>
+<div class="col-md-7 order-md-2">
+  <h2 class="featurette-heading fw-normal lh-1">報名方式及日程</h2>
+  <p class="lead">(一)競賽報名：自即日起至 114 年 11 月 7 日(五)截止。</p>
+  <p class="lead">競賽報名網址：<a href="https://forms.gle/Hs9SkDYpiAaB2J9p6" target="_blank" rel="noopener noreferrer">點我</a></p>
 
- <p class="lead">(二)繳件時間：自即日起至 114 年 12 月 14 日(日)截止。</p>
+  <p class="lead">(二)繳件時間：自即日起至 114 年 12 月 14 日(日)截止。</p>
  <p class="lead">(三)得獎名單公布：預計於 115 年 1 月底於「教學發展中心」網頁公布得獎
 名單，並以 Email 或電話通知領獎。</p>
 
@@ -92,5 +134,7 @@
 <p class="lead">2. 優選（1 件）：獎金新台幣 5,000 元，每人獎狀 1 張。
 </p>
 <p class="lead">3. 佳作（2 件）：獎金新台幣 2,000 元，每人獎狀 1 張。</p>
+
+</main>
 
 <footer class="py-3 my-4"> <ul class="nav justify-content-center border-bottom pb-3 mb-3"> <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">首頁</a></li>  </ul> <p class="text-center text-body-secondary">© 國立臺北教育大學</p> </footer>
