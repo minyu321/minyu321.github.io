@@ -26,6 +26,17 @@
       .dots{display:flex;gap:8px;justify-content:center;padding:12px;background:transparent}
       .dot{width:10px;height:10px;border-radius:50%;background:rgba(0,0,0,.25);cursor:pointer}
       .dot.active{background:var(--accent)}
+      /* 作品集 (Gallery) */
+      .portfolio{margin-top:28px}
+      .portfolio h2{margin:0 0 12px;font-size:18px}
+      .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+      .card{background:var(--card);border-radius:10px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,.06);text-decoration:none;color:inherit;display:block}
+      .card .thumb{height:140px;background:#f0f0f0;overflow:hidden}
+      .card img{width:100%;height:100%;object-fit:cover;display:block}
+      .card .meta{padding:12px}
+      .card h3{margin:0;font-size:15px}
+      .card p{margin:6px 0 0;color:#666;font-size:13px}
+      .card:focus,.card:hover{transform:translateY(-4px);transition:transform .18s ease}
       /* 介紹文字 */
       .intro{padding:18px 20px;background:transparent;text-align:left}
       .intro h1{margin:0 0 6px;font-size:20px}
@@ -33,6 +44,7 @@
     </style>
   </head>
   <body>
+      
     <header>主要作品</header>
 
     <main class="container">
@@ -63,6 +75,67 @@
           <p>Practice makes perfect.</p>
         </div>
       </section>
+
+      <!-- 區塊2：作品集 -->
+      <section id="portfolio" class="portfolio" aria-label="作品集">
+        <h2>作品集</h2>
+        <p style="margin:0 0 12px;color:#555;font-size:14px">以下為檔案總館資料夾，點選卡片以開啟對應頁面。</p>
+
+        
+        <div class="gallery">
+
+          <a class="card" href="https://sites.google.com/stu.ntue.edu.tw/qwer321321" target="_blank" rel="noopener">
+            <div class="thumb"><img src="1209/placeholder.jpg" alt="0923"></div>
+            <div class="meta">
+              <h3>0923</h3>
+              <p>GOOGLE協作平台</p>
+            </div>
+          </a>
+
+ <a class="card" href="20250930/index.html" target="_blank" rel="noopener">
+            <div class="thumb"><img src="20250930/pic.jpg" alt="20250930 預覽圖"></div>
+            <div class="meta">
+              <h3>0930 — 柳宗元《江雪》</h3>
+              <p>資料夾：20250930</p>
+            </div>
+          </a>
+
+           <a class="card" href="1104/index.html" target="_blank" rel="noopener">
+            <div class="thumb"><img src="1104/pic.jpg" alt="1104 預覽圖"></div>
+            <div class="meta">
+              <h3>1104 — 展示名片</h3>
+              <p>資料夾：1104</p>
+            </div>
+          </a>
+
+          <a class="card" href="1111/index.html" target="_blank" rel="noopener">
+            <div class="thumb"><img src="1111/1.jpg" alt="1111 預覽圖"></div>
+            <div class="meta">
+              <h3>1111 — 作品集</h3>
+              <p>資料夾：1111</p>
+            </div>
+          </a>
+
+          <a class="card" href="1118/index.html" target="_blank" rel="noopener">
+            <div class="thumb"><img src="1118/1.png" alt="1118 預覽圖"></div>
+            <div class="meta">
+              <h3>1118 — 教學網站</h3>
+              <p>資料夾：1118</p>
+            </div>
+          </a>
+
+          <a class="card" href="1209/index.html" target="_blank" rel="noopener">
+            <div class="thumb"><img src="1209/placeholder.jpg" alt="1209 預覽（占位）"></div>
+            <div class="meta">
+              <h3>1209 — 系列</h3>
+              <p>資料夾：1209</p>
+            </div>
+          </a>
+
+         
+        </div>
+      </section>
+
     </main>
 
     <script>
