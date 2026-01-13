@@ -8,7 +8,19 @@
       :root{--bg:#f8f8f8;--card:#ffffff;--accent:#222}
       *{box-sizing:border-box}
       body{margin:0;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans TC', 'Helvetica Neue', Arial; background:var(--bg); color:var(--accent);}
-      header{padding:18px 24px;text-align:center;font-weight:600}
+      header{
+        padding:20px 24px;
+        text-align:center;
+        font-weight:700;
+        font-size:20px;
+        color:var(--accent);
+        background:linear-gradient(90deg,#ffd6e8 0%,#ffeef6 100%);
+        border-radius:10px;
+        max-width:900px;
+        margin:16px auto;
+        box-shadow:0 6px 18px rgba(255,105,180,0.06);
+        letter-spacing:0.2px;
+      }
       .container{max-width:900px;margin:24px auto;padding:0 16px}
       /* 輪播 */
       .slideshow{position:relative;overflow:hidden;border-radius:10px;background:var(--card);box-shadow:0 6px 18px rgba(0,0,0,.06)}
@@ -42,6 +54,23 @@
       .intro{padding:18px 20px;background:transparent;text-align:center}
       .intro h1{margin:0 0 6px;font-size:20px}
       .intro p{margin:6px 0;color:#444}
+      /* 聯絡資訊（區塊三） */
+      .contact{margin-top:28px;background:transparent;padding:18px 20px;text-align:center}
+      .contact h2{margin:0 0 12px;font-size:18px;text-align:center}
+      .contact p{margin:6px 0;color:#555;font-size:14px}
+      .contact a{color:var(--accent);text-decoration:none}
+      .social{display:flex;justify-content:center;gap:12px;padding-top:12px}
+      .social a{display:inline-block;width:40px;height:40px;border-radius:6px;overflow:hidden}
+      .social img{width:100%;height:100%;object-fit:cover;display:block}
+      /* Footer */
+      .site-footer{margin-top:28px;background:var(--card);padding:14px 16px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,.04);text-align:center}
+      .site-footer .footer-links{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+      .site-footer .footer-links a{color:var(--accent);text-decoration:none;font-size:14px}
+      .site-footer p{margin:8px 0 0;color:#666;font-size:13px}
+      /* 回到頂部按鈕（浮動） */
+      .back-to-top{position:fixed;right:18px;bottom:18px;width:44px;height:44px;border-radius:999px;background:var(--accent);color:#fff;border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.12);opacity:0;transform:translateY(8px);transition:opacity .18s,transform .18s;z-index:999}
+      .back-to-top.show{opacity:1;transform:none}
+      .back-to-top:focus{outline:2px solid #fff;outline-offset:3px}
     </style>
   </head>
   <body>
@@ -82,7 +111,6 @@
         <h2>作品集</h2>
         <p>點選卡片以開啟對應頁面。</p>
 
-        
         <div class="gallery">
 
           <a class="card" href="https://sites.google.com/stu.ntue.edu.tw/qwer321321" target="_blank" rel="noopener">
@@ -137,6 +165,36 @@
         </div>
       </section>
 
+      <!-- 區塊3：個人聯絡方式 -->
+      <section id="contact" class="contact" aria-label="個人聯絡方式">
+        <h2>聯絡方式</h2>
+        <p>電子郵件：<a href="mailto:111407011@stu.ntue.edu.tw">111407011@stu.ntue.edu.tw</a><br>電話：<a href="tel:+886266396688">02 6639 6688</a></p>
+
+        <!-- 原始社群圖示來源已簡化並置中，維持原始連結目標 -->
+        <div class="social" aria-hidden="false">
+          <a href="http://instagram.com/ntue.official" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <img src="https://lh3.googleusercontent.com/sitesv/AAzXCkfA6vzGbdWfeQdRdi2D1bL7-_MZoxuHQPNDjUtf1RgS5aqcJpfozp3PdDI_VTo8jvVTPPyLCtrvRKfb-1xTqV_621jMgygWJJmQr_DjXC4eUqO54FGZFR8S__uZ_TReBEIQxNmo5EavUSgDxoVLm5IfWKuQRTTVrCXUDVb7F9mBOPeGXOIuG53z0yrPtH9MGZaJn84Kda4NgqMe" alt="Instagram">
+          </a>
+          <a href="https://facebook.com/ntue.edu.tw" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <img src="https://lh3.googleusercontent.com/sitesv/AAzXCkf939MJ2lsrVN5Ry9-xcWvbdzp6Z0tHYCM_Rhcb8F4O6hZWeZu3Bk8NizXtu8tM-0rlgIWBO2ktKNr2UFUtN_zqDfUs-Eo57BUZVPjuoUZbXu8bAE5NEFhA0NJb6vKsogLo-baYOJqN7DHUVaZEa9hbctjL_Q3KwvbY0lYwwsuiReLyEAtrB2evRIxV3Qss49g06tUusMa1gVJa" alt="Facebook">
+          </a>
+        </div>
+      </section>
+
+      <!-- 區塊4：Footer -->
+      <footer class="site-footer" role="contentinfo" aria-label="頁尾">
+        <div class="container">
+          <div class="footer-links">
+            <a href="#home">回到首頁</a>
+            <a href="#portfolio">作品集</a>
+            <a href="#contact">聯絡方式</a>
+          </div>
+          <p>© 2026 張羽喬</p>
+        </div>
+      </footer>
+
+      <button id="backToTop" class="back-to-top" aria-label="回到頂部">↑</button>
+
     </main>
 
     <script>
@@ -165,6 +223,14 @@
 
         function startTimer(){ timer = setInterval(()=> go(index+1), 4200); }
         function resetTimer(){ clearInterval(timer); startTimer(); }
+
+        // 回到頂部按鈕行為：顯示/隱藏與平滑滾動
+        const backBtn = document.getElementById('backToTop');
+        function handleScroll(){ backBtn.classList.toggle('show', window.scrollY > 200); }
+        window.addEventListener('scroll', handleScroll);
+        backBtn.addEventListener('click', ()=> window.scrollTo({top:0,behavior:'smooth'}));
+        // 初始判定
+        handleScroll();
 
         // 初始
         update(); startTimer();
